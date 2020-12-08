@@ -16,7 +16,7 @@ header {
 
 h1 {
   color: white;
-  font-size: 85px;
+  font-size: 40px;
   font-weight: 400;
 }
 
@@ -56,4 +56,8 @@ h1 {
 .chart-item {
   width: 170px;
   justify-self: center;
+}
+
+a:hover {
+  opacity: 0.8;
 }
