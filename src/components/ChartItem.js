@@ -1,0 +1,20 @@
+const ChartItem = ({loaded, item, position}) => {
+
+  if(!loaded) {
+    return <h1> loading... </h1>
+  }
+
+  return (
+    <>
+      <div className="chart-item" > 
+        <p className="position-text" >No. {position}</p>
+        <img src={item["im:image"][2]["label"]} alt="album cover"/>
+        <p className="track-text" >{item["im:name"]["label"]}</p>
+        <p className="artist-text" >{item["im:artist"]["label"]}</p>
+        
+      </div>
+    </>
+  )
+}
+
+export default ChartItem;
