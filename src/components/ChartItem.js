@@ -7,7 +7,7 @@ const ChartItem = ({loaded, item, position}) => {
   return (
     <>
       <div className="chart-item" > 
-        <p className="position-text" >No. {position}</p>
+        <p className="position-text" >No. <span>{position}</span></p>
         <a href={item.link[0].attributes.href} target="_blank">
         <img src={item["im:image"][2]["label"]} alt="album cover"/>
         </a>
