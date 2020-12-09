@@ -7,7 +7,11 @@ const ChartList = ({chart, loaded}) => {
 
   const getChartItem = chart.map((item, index) => { 
     return (
-      <ChartItem loaded={loaded} item={item} position={index+1}/>
+      <ChartItem 
+        loaded={loaded} 
+        item={item} 
+        position={index+1}
+      />
     );
   });
 
