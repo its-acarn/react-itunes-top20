@@ -5,7 +5,6 @@ const ChartItem = ({loaded, item, position}) => {
   }
 
   return (
-    <>
       <div className="chart-item" > 
         <p className="position-text" >No. <span>{position}</span></p>
         <a href={item.link[0].attributes.href} target="_blank">
@@ -13,9 +12,7 @@ const ChartItem = ({loaded, item, position}) => {
         </a>
         <p className="track-text" >{item["im:name"]["label"]}</p>
         <p className="artist-text" >{item["im:artist"]["label"]}</p>
-        
       </div>
-    </>
   )
 }
 
