@@ -12,6 +12,7 @@ const ChartContainer = () => {
       .then(res => res.json())
       .then(data => setChart(data.feed.entry))
       .then(() => setLoaded(true))
+      .catch(err => console.error);
   }
 
   useEffect(() => {
@@ -21,7 +22,7 @@ const ChartContainer = () => {
   return(
     <>
       <header>
-        <h1>UK Top 20</h1>
+        <h1>iTunes Chart</h1>
       </header>
       
       <ChartList chart={chart} loaded={loaded}/>
